@@ -7,8 +7,8 @@ def encrypt(text,s):
         else:
             result += chr((ord(char)+s -97)%26+97)
     return result
-text=input("enter the text:")
+text=input("enter the text.txt:")
 s=int(input("enter the shift between 1 to 25:"))
-print("text:"+text)
+print("text.txt:"+text)
 print("shift:"+str(s))
 print("cipher:"+encrypt(text,s))
